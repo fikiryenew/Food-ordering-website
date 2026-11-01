@@ -1,0 +1,162 @@
+/* src/Pages/Admin/AdminDashboard.css */
+
+.admin-dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #121212;
+  color: #ffffff;
+  min-height: calc(100vh - 70px);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 16px;
+}
+
+.dashboard-header h1 {
+  font-size: 1.8rem;
+  margin: 0 0 4px 0;
+}
+
+.dashboard-header p {
+  color: #aaaaaa;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.logout-btn {
+  background: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #e74c3c;
+  color: white;
+}
+
+/* Capacity Section */
+.capacity-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.capacity-info h3 {
+  margin: 0 0 6px 0;
+  color: #f39c12;
+}
+
+.capacity-info p {
+  margin: 0;
+  color: #cccccc;
+}
+
+.capacity-meter {
+  min-width: 260px;
+}
+
+.capacity-meter span {
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #27ae60;
+  transition: width 0.3s ease;
+}
+
+/* Orders Table */
+.orders-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+.orders-table-wrapper {
+  overflow-x: auto;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.orders-table th {
+  background: rgba(255, 255, 255, 0.05);
+  color: #dddddd;
+  font-weight: 600;
+}
+
+.ref-cell {
+  font-family: monospace;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.sub-text {
+  font-size: 0.8rem;
+}
+
+.text-muted {
+  color: #888888;
+}
+
+.price-cell {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.badge-method {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.status-select {
+  background: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 6px 10px;
+  outline: none;
+  font-size: 0.85rem;
+}
